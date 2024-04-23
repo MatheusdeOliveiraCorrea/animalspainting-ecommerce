@@ -15,3 +15,12 @@ services:
     ports:
       - "5434:1433"
     container_name: sql-server
+
+  webapi:
+    build: 
+      context: ./animal_painting_api
+    container_name: webapi
+    ports:
+      - 5000:8080
+    depends_on:
+      - sqldata
