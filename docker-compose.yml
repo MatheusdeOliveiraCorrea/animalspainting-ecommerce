@@ -1,6 +1,8 @@
 services:
   web:
-    build: .
+    build:
+      context: .
+      network: host
     ports:
       - 4200:4200
     depends_on:

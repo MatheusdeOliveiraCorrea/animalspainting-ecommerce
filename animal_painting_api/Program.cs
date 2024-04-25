@@ -6,8 +6,21 @@ internal class Program
 
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAll", builder =>
+                            builder.AllowAnyOrigin()
+                                   .AllowAnyMethod()
+                                   .AllowAnyHeader()
+                                   .SetIsOriginAllowed(x => true));
+        }
+        );
 
         var app = builder.Build();
+
+        app.UseCors(builder => builder.AllowAnyHeader()
+                                      .AllowAnyMethod()
+                                      .SetIsOriginAllowed(x => true));
 
         if (app.Environment.IsDevelopment())
         {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("animal_painting_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd60ce8e10d7db7212a604ebae0c685113ffaaf6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bce29eb8ac3b0bf7e264ad7b7c4f649dd77705a")]
 [assembly: System.Reflection.AssemblyProductAttribute("animal_painting_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("animal_painting_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
