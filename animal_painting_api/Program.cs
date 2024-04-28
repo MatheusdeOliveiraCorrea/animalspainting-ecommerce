@@ -30,13 +30,13 @@ internal class Program
 
         app.MapGet("/products", () =>
         {
-            var products = Enumerable.Range(1, 5).Select(index =>
+            var products = Enumerable.Range(1, 12).Select(index =>
                 new Product
                 (
                     index,
                     "name " + index,
                     Math.Round((decimal)(index * Math.PI) * 100, 2),
-                    "image..."
+                    $"Product_{index.ToString().PadLeft(2, '0')}.jpg"
                 ))
                 .ToArray();
             return products;
