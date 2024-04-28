@@ -34,7 +34,7 @@ internal class Program
                 new Product
                 (
                     index,
-                    "name " + index,
+                    "Animal " + index,
                     Math.Round((decimal)(index * Math.PI) * 100, 2),
                     $"Product_{index.ToString().PadLeft(2, '0')}.jpg"
                 ))
